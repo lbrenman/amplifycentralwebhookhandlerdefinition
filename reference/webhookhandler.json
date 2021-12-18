@@ -1,0 +1,31 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "webhookhandler",
+    "version": "1.0",
+    "summary": "Amplify Central Webhook Handler API",
+    "description": "Amplify Central Webhook Handler API  "
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "API Key - 1": {
+        "name": "APIKey",
+        "type": "apiKey",
+        "in": "header",
+        "description": "API Key"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Webhook Handler"
+    }
+  ]
+}
