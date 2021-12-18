@@ -321,8 +321,7 @@
       "type": "object",
       "required": [
         "consumerInstance",
-        "subscription",
-        "catalogItem"
+        "subscription"
       ],
       "properties": {
         "consumerInstance": {
@@ -529,7 +528,7 @@
             "tags": {
               "type": "array",
               "items": {
-                "type": "object"
+                "type": "string"
               }
             }
           }
@@ -563,7 +562,7 @@
             "nextPossibleStates": {
               "type": "array",
               "items": {
-                "type": "object"
+                "type": "string"
               }
             },
             "relationships": {
@@ -590,7 +589,7 @@
                   },
                   "value": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 0
                   }
                 },
                 "required": [
@@ -684,7 +683,7 @@
                   },
                   "value": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 0
                   }
                 },
                 "required": [
@@ -730,6 +729,7 @@
     }
   },
   "required": [
+    "metadata",
     "product",
     "type",
     "version",
