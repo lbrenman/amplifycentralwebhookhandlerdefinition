@@ -31,6 +31,308 @@
             "application/json": {
               "schema": {
                 "$ref": "../subscriptionWebhookPayload.json"
+              },
+              "examples": {
+                "Subscription Webhook Example": {
+                  "value": {
+                    "metadata": {},
+                    "product": "AmplifyCentral",
+                    "type": "SubscriptionUpdatedEvent",
+                    "version": "v1",
+                    "payload": {
+                      "consumerInstance": {
+                        "metadata": {
+                          "references": [
+                            {
+                              "id": "8a2e904c7ccdb5ac017cdc003cf66fc8",
+                              "kind": "APIServiceRevision",
+                              "name": "dbf98209-3b23-11ec-b7cb-0242ac110003.1",
+                              "scopeKind": "Environment",
+                              "scopeName": "v7b",
+                              "selfLink": "/management/v1alpha1/environments/v7b/apiservicerevisions/dbf98209-3b23-11ec-b7cb-0242ac110003.1",
+                              "type": "soft"
+                            },
+                            {
+                              "id": "8a2e814d7ccdb5a1017cdc003b876c88",
+                              "kind": "APIService",
+                              "name": "dbf98209-3b23-11ec-b7cb-0242ac110003",
+                              "scopeKind": "Environment",
+                              "scopeName": "v7b",
+                              "selfLink": "/management/v1alpha1/environments/v7b/apiservices/dbf98209-3b23-11ec-b7cb-0242ac110003",
+                              "type": "soft"
+                            },
+                            {
+                              "id": "8a2e904c7ccdb5ac017cdba25c5c6bfc",
+                              "kind": "ConsumerSubscriptionDefinition",
+                              "name": "32a0d913-cb08-46d7-9e19-713b87e8cf12",
+                              "scopeKind": "Environment",
+                              "scopeName": "v7b",
+                              "selfLink": "/management/v1alpha1/environments/v7b/consumersubscriptiondefs/32a0d913-cb08-46d7-9e19-713b87e8cf12",
+                              "type": "soft"
+                            },
+                            {
+                              "id": "8a2e814d7ccdb5a1017cdc003e876c92",
+                              "kind": "APIServiceInstance",
+                              "name": "dbf98209-3b23-11ec-b7cb-0242ac110003.1",
+                              "scopeKind": "Environment",
+                              "scopeName": "v7b",
+                              "selfLink": "/management/v1alpha1/environments/v7b/apiserviceinstances/dbf98209-3b23-11ec-b7cb-0242ac110003.1",
+                              "type": "hard"
+                            }
+                          ],
+                          "audit": {
+                            "modifyUserId": "DOSA_8ef309d638c64276bff7f02bac87a437",
+                            "createUserId": "DOSA_8ef309d638c64276bff7f02bac87a437",
+                            "createTimestamp": "2021-11-01T14:56:16.334+0000",
+                            "modifyTimestamp": "2021-11-01T14:56:16.334+0000"
+                          },
+                          "resourceVersion": "0",
+                          "scope": {
+                            "name": "v7b",
+                            "id": "8a2e8839781407c10178143caeec0031",
+                            "kind": "Environment",
+                            "selfLink": "/management/v1alpha1/environments/v7b"
+                          },
+                          "id": "8a2e814d7ccdb5a1017cdc003fce6c9d",
+                          "selfLink": "/management/v1alpha1/environments/v7b/consumerinstances/dbf98209-3b23-11ec-b7cb-0242ac110003"
+                        },
+                        "apiVersion": "v1alpha1",
+                        "kind": "ConsumerInstance",
+                        "name": "dbf98209-3b23-11ec-b7cb-0242ac110003",
+                        "attributes": {
+                          "apicId": "8a2e963276ab51b40176b545e8ca0028",
+                          "createdBy": "EnterpriseEdgeGatewayDiscoveryAgent",
+                          "externalAPIID": "32a0d913-cb08-46d7-9e19-713b87e8cf12",
+                          "externalAPIName": "weather",
+                          "GatewayType": "Edge",
+                          "majorHash": "18235070765696718801",
+                          "externalAPIPrimaryKey": "vhost:-path:/v2.0-routingKey:",
+                          "minorHash": "8472393168656605118"
+                        },
+                        "group": "management",
+                        "tags": [
+                          "APIID_c82126be-9915-4c29-9bfd-a6644e8fb510"
+                        ]
+                      },
+                      "subscription": {
+                        "metadata": {
+                          "createUserId": "f2c669af-d7a3-46fb-b327-8c60249bc4c9"
+                        },
+                        "nextPossibleStates": [
+                          "APPROVED",
+                          "REJECTED"
+                        ],
+                        "relationships": [
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_ID",
+                            "value": "8a2e814d7ccdb5a1017cdc003b876c88"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_REVISION_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003.1"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_INSTANCE_ID",
+                            "value": "8a2e814d7ccdb5a1017cdc003e876c92"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_REVISION_ID",
+                            "value": "8a2e904c7ccdb5ac017cdc003cf66fc8"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_INSTANCE_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003.1"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_CONSUMER_INSTANCE_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003"
+                          },
+                          {
+                            "key": "additionalDataAccessInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "UNSTRUCTURED_DATA_CONTENT_TYPE",
+                            "value": ""
+                          },
+                          {
+                            "key": "additionalDataAccessInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "UNSTRUCTURED_DATA_TYPE",
+                            "value": ""
+                          },
+                          {
+                            "key": "accessInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "TARGET_ENDPOINT_URL",
+                            "value": "https://208.67.129.36:8065/v2.0"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_ENVIRONMENT_ID",
+                            "value": "8a2e8839781407c10178143caeec0031"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_CONSUMER_INSTANCE_ID",
+                            "value": "8a2e814d7ccdb5a1017cdc003fce6c9d"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_ENVIRONMENT_NAME",
+                            "value": "v7b"
+                          }
+                        ],
+                        "currentStateDescription": "",
+                        "name": "Web App",
+                        "owningTeamId": "e4ec6c1a69fd0b8e016a22c82fc9170c",
+                        "id": "8a2e8be87d32d7bb017d34c876cb185c",
+                        "currentState": "REQUESTED",
+                        "properties": {
+                          "profile": {
+                            "appName": "Mission2020 (API Development)"
+                          }
+                        }
+                      },
+                      "catalogItem": {
+                        "name": "weather (v7b)",
+                        "owningTeamId": "e4ec6c1a69fd0b8e016a22c82fc9170c",
+                        "relationships": [
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_INSTANCE_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003.1"
+                          },
+                          {
+                            "key": "additionalDataAccessInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "UNSTRUCTURED_DATA_TYPE",
+                            "value": ""
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_ENVIRONMENT_NAME",
+                            "value": "v7b"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_INSTANCE_ID",
+                            "value": "8a2e814d7ccdb5a1017cdc003e876c92"
+                          },
+                          {
+                            "key": "accessInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "TARGET_ENDPOINT_URL",
+                            "value": "https://208.67.129.36:8065/v2.0"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_CONSUMER_INSTANCE_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_REVISION_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003.1"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_ENVIRONMENT_ID",
+                            "value": "8a2e8839781407c10178143caeec0031"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_REVISION_ID",
+                            "value": "8a2e904c7ccdb5ac017cdc003cf66fc8"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_NAME",
+                            "value": "dbf98209-3b23-11ec-b7cb-0242ac110003"
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_CONSUMER_INSTANCE_ID",
+                            "value": "8a2e814d7ccdb5a1017cdc003fce6c9d"
+                          },
+                          {
+                            "key": "additionalDataAccessInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "UNSTRUCTURED_DATA_CONTENT_TYPE",
+                            "value": ""
+                          },
+                          {
+                            "key": "apiServerInfo",
+                            "path": "",
+                            "spec": "catalogItem",
+                            "type": "API_SERVER_SERVICE_ID",
+                            "value": "8a2e814d7ccdb5a1017cdc003b876c88"
+                          }
+                        ],
+                        "id": "8a2e80017cc72844017cdc004246447c"
+                      }
+                    },
+                    "organization": {
+                      "id": "100000142"
+                    },
+                    "correlationId": "7bf265de-b830-4579-82a1-f813e57de7a3",
+                    "id": "13edb839-f92f-4b5b-8711-ed984cf1a90b",
+                    "time": "2021-11-18T20:41:33.351+0000"
+                  }
+                }
               }
             }
           }
