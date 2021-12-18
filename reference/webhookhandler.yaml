@@ -1,0 +1,41 @@
+swagger: '2.0'
+info:
+  title: webhookhandler
+  version: '1.0'
+  description: Amplify Central Webhook Handler API
+  contact:
+    name: Leor Brenman
+    email: lbrenman99@hotmail.com
+host: 'localhost:3000'
+schemes:
+  - http
+  - https
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /amplifycentralwebhookhandler:
+    post:
+      summary: ''
+      operationId: post-amplifycentralwebhookhandler
+      responses:
+        '200':
+          description: OK
+      tags:
+        - Webhook Handler
+      description: Amplify Central Webhook Handler API
+      parameters:
+        - in: body
+          name: body
+          schema:
+            $ref: ../subscriptionWebhookPayload.json
+definitions: {}
+securityDefinitions:
+  API Key - 1:
+    name: APIKey
+    type: apiKey
+    in: header
+    description: API Key
+tags:
+  - name: Webhook Handler
