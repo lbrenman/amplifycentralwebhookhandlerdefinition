@@ -74,5 +74,13 @@
     {
       "name": "Webhook Handler"
     }
-  ]
+  ],
+  "securityDefinitions": {
+    "API Key - 1": {
+      "name": "APIKey",
+      "type": "apiKey",
+      "in": "header",
+      "description": "API Key for API Builder"
+    }
+  }
 }
