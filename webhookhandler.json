@@ -21,7 +21,7 @@
   "paths": {
     "/amplifycentralwebhookhandler": {
       "post": {
-        "summary": "Create New User",
+        "summary": "Amplify Central Webhook Handler API",
         "operationId": "post-webhook",
         "responses": {
           "200": {
@@ -51,13 +51,305 @@
             "schema": {
               "$ref": "./subscriptionWebhookPayload.json"
             },
-            "description": "Post the necessary fields for the API to create a new user.",
+            "description": "Amplify Central Webhook Payload",
             "x-examples": {
-              "Create User Bob Fellow": {
-                "firstName": "Bob",
-                "lastName": "Fellow",
-                "email": "bob.fellow@gmail.com",
-                "dateOfBirth": "1996-08-24"
+              "Subscription Webhook": {
+                "metadata": {},
+                "product": "string",
+                "type": "string",
+                "version": "string",
+                "payload": {
+                  "consumerInstance": {
+                    "metadata": {
+                      "references": [
+                        {
+                          "id": "string",
+                          "kind": "string",
+                          "name": "string",
+                          "scopeKind": "string",
+                          "scopeName": "string",
+                          "selfLink": "string",
+                          "type": "string"
+                        },
+                        {
+                          "id": "string",
+                          "kind": "string",
+                          "name": "string",
+                          "scopeKind": "string",
+                          "scopeName": "string",
+                          "selfLink": "string",
+                          "type": "string"
+                        },
+                        {
+                          "id": "string",
+                          "kind": "string",
+                          "name": "string",
+                          "scopeKind": "string",
+                          "scopeName": "string",
+                          "selfLink": "string",
+                          "type": "string"
+                        },
+                        {
+                          "id": "string",
+                          "kind": "string",
+                          "name": "string",
+                          "scopeKind": "string",
+                          "scopeName": "string",
+                          "selfLink": "string",
+                          "type": "string"
+                        }
+                      ],
+                      "audit": {
+                        "modifyUserId": "string",
+                        "createUserId": "string",
+                        "createTimestamp": "string",
+                        "modifyTimestamp": "string"
+                      },
+                      "resourceVersion": "string",
+                      "scope": {
+                        "name": "string",
+                        "id": "string",
+                        "kind": "string",
+                        "selfLink": "string"
+                      },
+                      "id": "string",
+                      "selfLink": "string"
+                    },
+                    "apiVersion": "string",
+                    "kind": "string",
+                    "name": "string",
+                    "attributes": {
+                      "apicId": "string",
+                      "createdBy": "string",
+                      "externalAPIID": "string",
+                      "externalAPIName": "string",
+                      "GatewayType": "string",
+                      "majorHash": "string",
+                      "externalAPIPrimaryKey": "string",
+                      "minorHash": "string"
+                    },
+                    "group": "string",
+                    "tags": [
+                      "string"
+                    ]
+                  },
+                  "subscription": {
+                    "metadata": {
+                      "createUserId": "string"
+                    },
+                    "nextPossibleStates": [
+                      "string",
+                      "string"
+                    ],
+                    "relationships": [
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      }
+                    ],
+                    "currentStateDescription": "string",
+                    "name": "string",
+                    "owningTeamId": "string",
+                    "id": "string",
+                    "currentState": "string",
+                    "properties": {
+                      "profile": {
+                        "appName": "string"
+                      }
+                    }
+                  },
+                  "catalogItem": {
+                    "name": "string",
+                    "owningTeamId": "string",
+                    "relationships": [
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      },
+                      {
+                        "key": "string",
+                        "path": "string",
+                        "spec": "string",
+                        "type": "string",
+                        "value": "string"
+                      }
+                    ],
+                    "id": "string"
+                  }
+                },
+                "organization": {
+                  "id": "string"
+                },
+                "correlationId": "string",
+                "id": "string",
+                "time": "string"
               }
             }
           }
