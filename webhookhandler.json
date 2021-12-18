@@ -1,0 +1,78 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "webhookhandler",
+    "version": "1.0",
+    "description": "Amplify Central Webhook Handler for Subscriptions and Integration Webhooks  ",
+    "contact": {
+      "name": "Leor Brenman"
+    }
+  },
+  "host": "localhost:3000",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/amplifycentralwebhookhandler": {
+      "post": {
+        "summary": "Create New User",
+        "operationId": "post-webhook",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "null"
+            }
+          },
+          "400": {
+            "description": "Missing Required Information",
+            "schema": {
+              "type": "null"
+            }
+          },
+          "409": {
+            "description": "Email Already Taken",
+            "schema": {
+              "type": "null"
+            }
+          }
+        },
+        "description": "An Amplify Central Webhook Handler  ",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "./subscriptionWebhookPayload.json"
+            },
+            "description": "Post the necessary fields for the API to create a new user.",
+            "x-examples": {
+              "Create User Bob Fellow": {
+                "firstName": "Bob",
+                "lastName": "Fellow",
+                "email": "bob.fellow@gmail.com",
+                "dateOfBirth": "1996-08-24"
+              }
+            }
+          }
+        ],
+        "tags": [
+          "Webhook Handler"
+        ]
+      },
+      "parameters": []
+    }
+  },
+  "definitions": {},
+  "tags": [
+    {
+      "name": "Webhook Handler"
+    }
+  ]
+}
