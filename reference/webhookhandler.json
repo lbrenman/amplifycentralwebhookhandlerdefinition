@@ -4,14 +4,43 @@
     "title": "webhookhandler",
     "version": "1.0",
     "summary": "Amplify Central Webhook Handler API",
-    "description": "Amplify Central Webhook Handler API  "
+    "description": "Amplify Central Webhook Handler API  ",
+    "contact": {
+      "name": "Leor Brenman",
+      "email": "lbrenman99@hotmail.com"
+    }
   },
   "servers": [
     {
       "url": "http://localhost:3000"
     }
   ],
-  "paths": {},
+  "paths": {
+    "/amplifycentralwebhookhandler": {
+      "post": {
+        "summary": "",
+        "operationId": "post-amplifycentralwebhookhandler",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "Webhook Handler"
+        ],
+        "description": "Amplify Central Webhook Handler API  ",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "../subscriptionWebhookPayload.json"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "components": {
     "schemas": {},
     "securitySchemes": {
