@@ -331,9 +331,7 @@
             "apiVersion",
             "kind",
             "name",
-            "attributes",
-            "group",
-            "tags"
+            "attributes"
           ],
           "properties": {
             "metadata": {
@@ -341,10 +339,7 @@
               "required": [
                 "references",
                 "audit",
-                "resourceVersion",
-                "scope",
-                "id",
-                "selfLink"
+                "scope"
               ],
               "properties": {
                 "references": {
@@ -382,26 +377,11 @@
                         "type": "string",
                         "minLength": 1
                       }
-                    },
-                    "required": [
-                      "id",
-                      "kind",
-                      "name",
-                      "scopeKind",
-                      "scopeName",
-                      "selfLink",
-                      "type"
-                    ]
+                    }
                   }
                 },
                 "audit": {
                   "type": "object",
-                  "required": [
-                    "modifyUserId",
-                    "createUserId",
-                    "createTimestamp",
-                    "modifyTimestamp"
-                  ],
                   "properties": {
                     "modifyUserId": {
                       "type": "string",
@@ -427,12 +407,6 @@
                 },
                 "scope": {
                   "type": "object",
-                  "required": [
-                    "name",
-                    "id",
-                    "kind",
-                    "selfLink"
-                  ],
                   "properties": {
                     "name": {
                       "type": "string",
@@ -476,16 +450,6 @@
             },
             "attributes": {
               "type": "object",
-              "required": [
-                "apicId",
-                "createdBy",
-                "externalAPIID",
-                "externalAPIName",
-                "GatewayType",
-                "majorHash",
-                "externalAPIPrimaryKey",
-                "minorHash"
-              ],
               "properties": {
                 "apicId": {
                   "type": "string",
@@ -549,9 +513,6 @@
           "properties": {
             "metadata": {
               "type": "object",
-              "required": [
-                "createUserId"
-              ],
               "properties": {
                 "createUserId": {
                   "type": "string",
@@ -591,14 +552,7 @@
                     "type": "string",
                     "minLength": 0
                   }
-                },
-                "required": [
-                  "key",
-                  "path",
-                  "spec",
-                  "type",
-                  "value"
-                ]
+                }
               }
             },
             "currentStateDescription": {
@@ -644,12 +598,6 @@
         },
         "catalogItem": {
           "type": "object",
-          "required": [
-            "name",
-            "owningTeamId",
-            "relationships",
-            "id"
-          ],
           "properties": {
             "name": {
               "type": "string",
@@ -685,21 +633,20 @@
                     "type": "string",
                     "minLength": 0
                   }
-                },
-                "required": [
-                  "key",
-                  "path",
-                  "spec",
-                  "type",
-                  "value"
-                ]
+                }
               }
             },
             "id": {
               "type": "string",
               "minLength": 1
             }
-          }
+          },
+          "required": [
+            "name",
+            "owningTeamId",
+            "relationships",
+            "id"
+          ]
         }
       }
     },
@@ -734,7 +681,6 @@
     "type",
     "version",
     "payload",
-    "organization",
     "correlationId",
     "id",
     "time"
