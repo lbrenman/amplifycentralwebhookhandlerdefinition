@@ -319,28 +319,12 @@
     },
     "payload": {
       "type": "object",
-      "required": [
-        "consumerInstance",
-        "subscription"
-      ],
       "properties": {
         "consumerInstance": {
           "type": "object",
-          "required": [
-            "metadata",
-            "apiVersion",
-            "kind",
-            "name",
-            "attributes"
-          ],
           "properties": {
             "metadata": {
               "type": "object",
-              "required": [
-                "references",
-                "audit",
-                "scope"
-              ],
               "properties": {
                 "references": {
                   "type": "array",
@@ -499,17 +483,6 @@
         },
         "subscription": {
           "type": "object",
-          "required": [
-            "metadata",
-            "nextPossibleStates",
-            "relationships",
-            "currentStateDescription",
-            "name",
-            "owningTeamId",
-            "id",
-            "currentState",
-            "properties"
-          ],
           "properties": {
             "metadata": {
               "type": "object",
@@ -576,15 +549,9 @@
             },
             "properties": {
               "type": "object",
-              "required": [
-                "profile"
-              ],
               "properties": {
                 "profile": {
                   "type": "object",
-                  "required": [
-                    "appName"
-                  ],
                   "properties": {
                     "appName": {
                       "type": "string",
@@ -640,21 +607,12 @@
               "type": "string",
               "minLength": 1
             }
-          },
-          "required": [
-            "name",
-            "owningTeamId",
-            "relationships",
-            "id"
-          ]
+          }
         }
       }
     },
     "organization": {
       "type": "object",
-      "required": [
-        "id"
-      ],
       "properties": {
         "id": {
           "type": "string",
@@ -680,9 +638,6 @@
     "product",
     "type",
     "version",
-    "payload",
-    "correlationId",
-    "id",
-    "time"
+    "payload"
   ]
 }
