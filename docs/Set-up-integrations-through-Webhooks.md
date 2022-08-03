@@ -2,9 +2,11 @@
 stoplight-id: 19cudwq6kznwf
 ---
 
-# Overview
+# Amplify Central Webhook Handler API Overview
 
-Amplify webhooks apply to Unified Catalog API Subscription requests, Marketplace Product Subscription requests and Integration Resource Webhooks.
+This API specification document defines an API that can be a webhook handler for an Amplify Central webhook.
+
+Amplify Central webhooks apply to Unified Catalog API Subscription requests, Marketplace Product Subscription requests and Integration Resource Webhooks.
 
 This API defines a webhook api for all.
 
