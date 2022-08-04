@@ -16,7 +16,7 @@ This API defines a webhook api for all.
 
 The general form of a webhook is shown below (example of a Marketplace Product Subscription webhook payload):
 
-```
+```javascript
 {
   "id": "4d2bbd32-6f....37",
   "time": "2022-06-20T11:30:28.133+0000",
