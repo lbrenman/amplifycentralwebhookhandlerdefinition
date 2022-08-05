@@ -2,7 +2,7 @@
 stoplight-id: 19cudwq6kznwf
 ---
 
-# Amplify Central Webhook Handler API Overview
+# Overview
 
 This API specification document defines an API that can be a webhook handler for an Amplify Central webhook.
 
